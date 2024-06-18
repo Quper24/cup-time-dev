@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import LogoImg from "../assets/image/logo.svg";
+
 export const Header = () => (
   <header className="header">
     <div className="container header__container">
-      <a className="header__logo">
+      <Link to="/" className="header__logo">
         <img src={LogoImg} alt="Логотип Cup Time" />
-      </a>
+      </Link>
 
       <nav className="header__nav">
         <ul className="header__menu">
@@ -36,9 +38,9 @@ export const Header = () => (
         </ul>
       </nav>
 
-      <a href="/cart" className="header__cart-icon">
+      <Link to="/cart" className="header__cart-icon">
         4
-      </a>
+      </Link>
 
       <button className="header__menu-button"></button>
     </div>
