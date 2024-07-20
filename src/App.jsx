@@ -1,17 +1,17 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import { Footer } from "./modules/Footer";
 import { Header } from "./modules/Header";
 import { Main } from "./modules/Main";
+import { Footer } from "./modules/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <>
-        <Header />
-        <Main />
-        <Footer />
-      </>
-    </Router>
+    <BrowserRouter>
+      <Header />
+
+      <Main />
+
+      <Footer />
+    </BrowserRouter>
   );
 }
 
