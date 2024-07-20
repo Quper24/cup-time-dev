@@ -90,6 +90,10 @@ input[type="number"] {
   gap: 50px;
 }
 
+.header__menu-link.active {
+  color: #64099b;
+}
+
 .header__cart-link {
   width: 28px;
   height: 28px;
@@ -181,6 +185,7 @@ input[type="number"] {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
@@ -330,7 +335,6 @@ input[type="number"] {
 .cart-item__title {
   font-weight: 400;
   font-size: 20px;
-  color: var(--color-text);
   margin-top: 0;
   margin-bottom: 8px;
   white-space: nowrap;
@@ -503,6 +507,7 @@ input[type="number"] {
     white-space: initial;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
   }
 
@@ -638,7 +643,7 @@ input[type="number"] {
   .cart__summary {
     order: 1;
     margin-bottom: 40px;
-    grid-template-areas: "title  total button";
+    grid-template-areas: "title total button";
     grid-template-columns: min-content 1fr min-content;
     gap: 6px;
   }
